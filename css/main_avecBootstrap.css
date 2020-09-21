@@ -1,0 +1,59 @@
+/* Parce que Bootstrap ne réalise pas tout ce que
+l'on souhaite faire, on surcharge ensuite avec sa
+propre CSS en essayant de conserver
+la philosophie Bootstrap (pas simple) */
+/* Comportement par défaut */
+.text-center-sm,
+.text-center-md,
+.text-center-lg,
+.text-right-sm,
+.text-right-md,
+.text-right-lg {
+    text-align: inherit;
+}
+/* Style par défaut */
+.text-center-xs {
+    text-align: center;
+}
+.text-right-xs {
+    text-align: right;
+}
+/* Style pour tablette */
+@media (min-width: 768px) {
+    .text-center-sm,
+    .text-center-xs {
+        text-align: center;
+    }
+    .text-right-sm,
+    .text-right-xs {
+        text-align: right;
+    }
+}
+/* Style pour desktop */
+@media (min-width: 992px) {
+    .text-center-md,
+    .text-center-sm,
+    .text-center-xs {
+        text-align: center;
+    }
+    .text-right-md,
+    .text-right-sm,
+    .text-right-xs {
+        text-align: right;
+    }
+}
+/* Style pour grand desktop */
+@media (min-width: 1200px) {
+    .text-center-lg,
+    .text-center-md,
+    .text-center-sm,
+    .text-center-xs {
+        text-align: center;
+    }
+    .text-right-lg,
+    .text-right-md,
+    .text-right-sm,
+    .text-right-xs {
+        text-align: right;
+    }
+}

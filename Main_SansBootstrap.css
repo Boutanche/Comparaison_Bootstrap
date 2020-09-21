@@ -1,0 +1,56 @@
+/* Entrer le padding dans le calcul interne */
+h1,
+nav,
+article,
+aside {
+    box-sizing: border-box;
+}
+/* Mettre le titre en gras */
+h1 {
+    font-weight: bold;
+}
+/* Centrer les textes du menu */
+nav {
+    text-align: center;
+}
+/* Retrait du comportement de liste standard */
+nav ul {
+    padding-left: 0;
+}
+nav li {
+    list-style-type: none;
+}
+/* À partir d'une tablette */
+@media (min-width: 768px) {
+    /* Empêcher les écoulements de flottants */
+    header:after,
+    section:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    /* Flotter à gauche en 50% */
+    h1,
+    aside {
+        float: left;
+        width: 50%;
+    }
+    /* Flotter à droite en 50% */
+    h1,
+    article {
+        float: right;
+        width: 50%;
+    }
+    /* Remettre les menus en alignement standard */
+    nav {
+        text-align: left;
+    }
+    /* Mettre le menu en ligne */
+    nav li {
+        display: inline-block;
+    }
+    /* Placer le titre à droite */
+    h1 {
+        text-align: right;
+    }
+}
